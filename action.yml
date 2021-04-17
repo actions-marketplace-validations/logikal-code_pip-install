@@ -1,4 +1,4 @@
-name: Pip Install
+name: Python Pip Install
 description: Install Python packages from a requirements file
 branding:
   icon: box
