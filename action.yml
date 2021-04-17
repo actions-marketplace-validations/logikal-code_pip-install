@@ -1,0 +1,20 @@
+name: Pip Install
+description: Install Python packages from a requirements file
+branding:
+  icon: box
+  color: gray-dark
+
+inputs:
+  requirements:
+    description: The path to the requirements file
+    required: false
+    default: requirements.txt
+
+runs:
+  using: composite
+  steps:
+    - name: Install packages
+      shell: bash
+      run: |
+        python -m pip install --upgrade pip setuptools wheel
+        python -m pip install -r ${{ inputs.requirements }}
