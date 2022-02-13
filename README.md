@@ -6,7 +6,7 @@ Usage
 -----
 ```yaml
 steps:
-  - uses: logikal-code/pip-install@v{version}
+  - uses: logikal-code/pip-install@{release}
 ```
 
 Inputs
